@@ -4,7 +4,7 @@ export function CardCharacter({image, name, genre, specie}) {
     return(
         <ContainerCard>
             <div className="image">
-                <img src={image} alt="" />
+                <img src={image} alt={name} />
             </div>
             <div className="info">
                 <h3>{name}</h3>

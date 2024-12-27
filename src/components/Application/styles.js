@@ -21,6 +21,13 @@ export const HeaderApp = styled.div`
         font-size: 1.6rem;
         opacity: 0.6rem;
     }
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 2.0rem;
+        h1 {
+            text-align: center;
+        }
+    }
 `
 
 export const ContentCharacters = styled.div`
@@ -45,16 +52,26 @@ export const ContentCharacters = styled.div`
             filter: brightness(0.8);
         }
     }
+    @media (max-width: 1024px) {
+        div {
+            grid-template-columns: repeat(3, 1fr); 
+        }
+    }
+    @media (max-width: 750px) {
+        div {
+            grid-template-columns: repeat(2, 1fr); 
+        }
+    }
 `
 
 export const PesquisarInput = styled.div`
     input {
         width: 100%;
-        max-width: 200px;
+        max-width: 35.0rem;
         padding: 10px;
         border-radius: 25px;
         background-color: transparent;
-        border: 2px solid white;
+        border: 1px solid white;
         color: white;
     }
 `

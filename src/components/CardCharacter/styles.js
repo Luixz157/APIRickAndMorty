@@ -24,7 +24,8 @@ export const ContainerCard = styled.div`
         }
         ul {
             list-style: none;
-            display: flex;
+            display: grid;
+            grid-column: auto;
             li {
                 display: block;
                 font-size: 1.4rem;

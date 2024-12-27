@@ -18,7 +18,9 @@ export function Application() {
             setCharacters(array);
             setCountPages(response.data.info.pages); // Total number of pages available
         });
+        
     }, [page]);
+    
 
     // Function to handle search input changes
     function handleSearchChange(event) {
